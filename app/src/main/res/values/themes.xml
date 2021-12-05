@@ -11,6 +11,18 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/myApp.TextStyle</item>
     </style>
+
+    <style name="myApp.TextStyle" parent="Theme.CPC10">
+        <item name="android:textSize">25dp</item>
+
+
+
+    </style>
+
+
 </resources>

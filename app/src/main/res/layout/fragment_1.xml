@@ -8,18 +8,70 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/fragmet1_textview"
+        android:id="@+id/label_letterscount_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fragment_1"
+        android:text="@string/label_letterscount"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/wordenter_textview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fragment_1"
-        app:layout_constraintTop_toBottomOf="@+id/fragmet1_textview"
+        android:layout_marginTop="152dp"
+        android:gravity="center"
+        android:text="@string/label_entertext"
+        app:layout_constraintTop_toBottomOf="@+id/label_letterscount_textview"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/wordenter_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/wordenter_textview"
+        android:inputType="text"
+        android:gravity="center"
+        android:textColor="@color/my_input_color"
+        />
+
+    <TextView
+        android:id="@+id/resultlabel_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="start"
+        android:text="@string/result"
+        app:layout_constraintTop_toBottomOf="@+id/wordenter_edittext"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/result_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@+id/resultlabel_textview"
+        android:textColor="@color/purple_500"
+    />
+
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/clear_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        app:layout_constraintStart_toEndOf="@+id/calculate_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />

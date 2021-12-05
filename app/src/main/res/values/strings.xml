@@ -7,4 +7,16 @@
     <string name="fragment_1">Fragment 1</string>
     <string name="fragment_2">Fragment 2</string>
     <string name="CPC10">CPC10</string>
+    <string name="label_letterscount">Calculation of the number of symbols</string>
+    <string name="label_entertext">Enter the world</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="result">Result:</string>
+    <string name="please_enter_you_word_here">Please, enter you word here</string>
+    <string name="test">test</string>
+    <string name="kotlin_books">Kotlin books</string>
+    <string name="letters_calculator">Letters calculator</string>
+    <string name="android_programming_books">Android programming books</string>
+    <string name="find_in_internet">Find in Internet</string>
+    <string name="final_project">Final project</string>
 </resources>

@@ -8,17 +8,26 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/fragmet2_textview"
+        android:id="@+id/books_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fragment_2"
+        android:text="@string/android_programming_books"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/books_textview"
+        app:layout_constraintBottom_toTopOf="@+id/findinternet_button"
+
+        />
+
     <Button
+        android:id="@+id/findinternet_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fragment_2"
-        app:layout_constraintTop_toBottomOf="@+id/fragmet2_textview"
+        android:text="@string/find_in_internet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
